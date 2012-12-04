@@ -1,0 +1,32 @@
+<script type="text/javascript" language="javascript">
+function close(){
+window.close();
+}
+
+</script>
+<div class="currency_converter">
+<h3 class="currency_heading">Currency Converter</h3>
+<div class="currency_form">
+<form name="input" action="" method="get">
+
+<label for="usamount">US Dollar Amount:</label><input type="text" id="usamount" name="usamount" value="" /><br />
+<label for="equivalent">Equivalent Amount:</label><span id="error_message"></span><div id="equivalent"></div>
+<table>
+<tr>
+<td><input type="radio" name="currency" value="Brazil" />Brazil</td><td><%= submit_to_remote 'submit','compute',
+:update=>'equivalent',
+:url=>{:action=>'calculate_exchange_rate'} %></td>
+</tr>
+<tr>
+<td><input type="radio" name="currency" value="Canada" />Canada</td><td><input type="button" value="Clear" onclick="this.form.reset();"/></td>
+</tr>
+<tr>
+<td><input type="radio" name="currency" value="European Community" />European Community</td><td><input type="button" value="quit" onclick="window.close();" /></td>
+</tr>
+<tr>
+<td><input type="radio" name="currency" value="Japan" />Japan</td></td>
+</tr>
+
+</form>
+</div>
+</div>

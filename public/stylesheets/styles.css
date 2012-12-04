@@ -1,0 +1,49 @@
+.currency_converter{
+margin:200px auto;
+border:3px solid black;
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+background: white; /* fallback for older/unsupporting browsers */  
+background: -moz-linear-gradient(top, #ababab, white 18%);  
+background: -webkit-gradient(linear, 0 0, 0 18%, from(#ababab), to(white));
+box-shadow: 15px 15px 15px #ababab;
+width:50%;
+}
+.currency_converter h3{
+text-align:center;
+}
+.currency_converter .currency_form{
+margin:20px auto;
+width:50%;
+}
+input{
+border: 1px solid grey;
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+}
+
+input:hover{
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+background-color:#dedede;
+border-color:#660066;
+}
+input:focus{
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+background-color:#ababab;
+border-color:#996600;
+}
+#equivalent{
+background-color:#dedede;
+border:1px solid grey;
+width:150px;
+height:20px;
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+}
